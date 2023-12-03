@@ -27,7 +27,7 @@ def insert_documents(client: MongoClient, db_name: str, coll_name: str, docs: Li
     client[db_name][coll_name].insert_many(docs)
 
 
-def store_job_info(job_info):
+def store_into_mongo_cloud(job_info):
     db_name = 'job'
     coll_name = 'job_info'
     client = get_mongo_client()

@@ -1,1 +1,1 @@
-from .mongo import store_job_info
+from .common import store_job_info
